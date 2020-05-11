@@ -1,8 +1,17 @@
 .section-1
-  height: 640px
+  // height: 640px
   background: linear-gradient(90deg, rgba(17,54,96,1) 50%, rgba(255,203,8,1) 50%)
   +media-md 
-    height: 480px
+    // height: 480px
+
+.section-1__decor
+  position: absolute
+  top: -60px
+  left: 40px
+  +media-md 
+    top: -92px
+    left: -10px
+    transform: scale(.8)
 
 .section-1__row
   padding-top: 145px
@@ -18,12 +27,38 @@
 .section-1__text
   position: relative
 .section-1__item
+  position: relative
   font-size: 18px
   line-height: 1.3
   color: #fff
   margin-bottom: 126px
+  &::after 
+    position: absolute
+    content: ''
+    top: 10px
+    right: -100px
+    width: 270px
+    height: 1px
+    background-color: #fff
+    opacity: .6
+  &:nth-child(2)
+    &::after 
+      top: 28px
+      right: -32px
+      width: 150px
+  +media-lg 
+    &::after
+      width: 150px
   +media-md 
-    margin-bottom: 55px
+    margin-bottom: 70px
+    &::after
+      width: 107px
+      right: -84px
+    &:nth-child(2)
+      margin-bottom: 97px
+      &::after
+        width: 45px
+  
 
 .section-1__text-bg
   position: absolute
@@ -48,9 +83,11 @@
 
 .section-1__image
   margin-left: 130px
+  margin-bottom: 15px
   img 
     width: 100%
   +media-lg 
+    margin-top: 40px
     margin-left: 40px
 
 .section-1__buttons
@@ -59,7 +96,7 @@
   width: 500px
   justify-content: space-between
   +media-lg 
-    width: 450px
+    width: 425px
   +media-md 
     float: none
     flex-direction: column
@@ -68,6 +105,8 @@
 
 .section-1__btn-instruction
   width: 240px
+  +media-lg 
+    width: 220px
   +media-md 
     margin-bottom: 10px
 

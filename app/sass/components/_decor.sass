@@ -1,0 +1,47 @@
+.decor
+  position: relative
+  width: 465px  
+  height: 465px
+  border-radius: 50%
+  border: 2px solid #fff
+  border-top: none
+  border-right: none
+  border-bottom: none
+
+
+.decor__item
+  position: absolute
+  top: 50%
+  left: -12px
+  display: block
+  width: 24px 
+  height: 10px
+  background: url('../img/decor-item.svg')
+  &:first-child 
+    transform: rotate(30deg)
+    top: 65px
+    left: 50px
+  &:last-child 
+    transform: rotate(-30deg)
+    bottom: 65px
+    top: auto
+    left: 50px
+
+.decor--animated 
+  animation: rotate 2s 
+  .decor__item
+    animation: fade 6s
+
+
+@keyframes rotate 
+  from 
+    transform: rotate(0deg)
+  to 
+    transform: rotate(360deg)
+
+@keyframes fade 
+  from 
+    opacity: 0
+  to 
+    opacity: 1
+

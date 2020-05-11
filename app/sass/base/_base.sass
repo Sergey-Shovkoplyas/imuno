@@ -24,10 +24,16 @@ body
   min-height: 1500px
 
 .container
-  max-width: 1190px
+  max-width: 1220px
   margin: 0 auto
   padding: 0 15px
+  padding-right: 45px
   // outline: 1px solid green
+  &--1350
+    max-width: 1350px
+  +media-1350
+    &--1350
+      max-width: 1200px
   +media-lg
     max-width: 960px
   +media-md
