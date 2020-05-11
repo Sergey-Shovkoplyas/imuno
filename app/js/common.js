@@ -1,11 +1,12 @@
-window.onload = function () {
-	
-	console.log('js is working!!!'); 
+$( document ).ready(function() {
 
-}
+	new WOW().init();
 
-/* $( document ).ready(function() {
+	// ---------------- section questions ------------------
 
-	console.log( 'JQuery!!!' );
+	$('.questions__item').on('click', function() {
+		$(this).next('.questions__amswer').slideToggle();
+		$(this).toggleClass('active');
+	});
 
-}); */
+});

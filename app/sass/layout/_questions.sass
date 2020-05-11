@@ -1,0 +1,118 @@
+.questions
+  padding: 85px 0px 55px
+  background-color: #fff
+
+.questions__wrap
+  max-width: 1040px
+  margin: 0 auto
+
+.questions__title
+  margin-bottom: 110px
+  +media-md 
+    margin-bottom: 60px
+
+.questions__list
+  padding: 0
+  margin: 0
+  list-style: none
+  margin-bottom: 60px
+  li 
+    background-color: #F1F1F1
+    margin-bottom: 5px
+  p 
+    margin: 0
+    margin-bottom: 20px
+  p:last-child 
+    margin-bottom: 0
+
+.questions__item
+  position: relative
+  padding: 25px 130px 25px 40px
+  font-weight: 900
+  font-size: 22px
+  color: #113660
+  cursor: pointer
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    right: 45px
+    transform: translate(0, -50%) rotate(45deg)
+    width: 15px
+    height: 15px
+    border-radius: 2px
+    border-top: 2px solid #113660
+    border-right: 2px solid #113660
+    transition: .3s
+.questions__item.active
+  &::after 
+    transform: translate(0, -50%) rotate(135deg)
+
+.questions__amswer
+  display: none
+  padding: 0px 160px 25px 40px
+
+.questions__form-row
+  display: flex
+  justify-content: space-between
+  margin-bottom: 47px
+  +media-md 
+    flex-wrap: wrap
+
+
+.questions__inputs
+  display: flex
+  justify-content: space-between
+  input[type='text']
+    padding: 25px 40px
+    background: #F1F1F1
+    border-radius: 35px
+    outline: none 
+    border: none
+    color: #56575A
+    &::placeholder 
+      opacity: .7
+  +media-md 
+    width: 100%
+    margin-bottom: 15px
+    input[type='text']
+      width: 100%
+
+.questions__form-email
+  width: 300px
+  margin-right: 22px
+
+.questions__form-message
+  width: 420px
+  +media-lg 
+    width: 370px
+
+.questions__form-submit
+  +media-md 
+    margin: 0 auto
+    width: 335px
+    button 
+      width: 100%
+
+.questions__form-policy
+  display: none
+  cursor: pointer
+
+.questions__form-policy:checked + .questions__form-policy-label::before 
+  background: #113660 url('../img/chacked.svg') no-repeat center
+
+.questions__form-policy-label
+  display: block
+  position: relative
+  font-size: 12px
+  margin-left: 30px
+  padding-left: 25px
+  cursor: pointer
+  &::before
+    position: absolute
+    content: ''
+    top: -2px 
+    left: 0px
+    width: 16px
+    height: 16px
+    border: 1px solid #C4C4C4

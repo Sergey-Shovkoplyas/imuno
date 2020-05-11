@@ -1,18 +1,33 @@
+*, 
+*:before, 
+*:after 
+  box-sizing: border-box
+
+html, 
+body 
+  overflow-x: hidden
+
+.clearfix 
+  &:after 
+    content: " "
+    display: table
+    clear: both
+  
+  
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
-  font-size: 18px
-  line-height: 1.2
+  font-family: "Roboto", sans-serif
+  font-size: 16px
+  line-height: 1.3
+  font-weight: 400
+  color: #56575A
+  min-height: 1500px
 
-.row 
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px
-  
 .container
-  max-width: 1200px
+  max-width: 1190px
   margin: 0 auto
   padding: 0 15px
+  // outline: 1px solid green
   +media-lg
     max-width: 960px
   +media-md
@@ -21,3 +36,17 @@ body
     max-width: 430px
   +media-xs
     width: auto
+
+h2 
+  margin: 0
+  font-size: 50px
+  font-weight: 900
+  line-height: 1
+  color: #56575A
+  text-align: center
+  +media-md 
+    font-size: 40px
+
+a 
+  text-decoration: none
+  color: inherit

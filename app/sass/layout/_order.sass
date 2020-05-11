@@ -1,0 +1,119 @@
+.order
+  padding: 60px 0px 35px
+  background-color: #FFCB08
+
+.order__title
+  margin-bottom: 50px
+  h2
+    color: #113660
+
+.order__row
+  display: flex
+  margin-bottom: 70px
+  +media-md
+    flex-wrap: wrap
+    margin-bottom: 30px
+
+.order__left
+  width: 260px
+  +media-md 
+    width: 100%
+
+.order__name,
+.order__phone
+  width: 100%
+  padding: 25px 40px
+  background: #fff
+  border-radius: 35px
+  outline: none 
+  border: none
+  color: #56575A
+  &::placeholder 
+    opacity: .7
+  +media-md 
+    display: block
+    width: 80%
+    margin: 0 auto
+
+.order__name
+  margin-bottom: 17px
+
+.order__phone
+  margin-bottom: 37px
+
+.order__form-submit
+  width: 100%
+  margin-bottom: 32px
+  button 
+    width: 100%
+  +media-lg 
+    button  
+      padding: 25px 20px
+  +media-md 
+    width: 80%
+    margin: 0 auto
+    margin-bottom: 20px
+
+.order__form-policy
+  display: none
+
+.order__form-policy:checked + .order__form-policy-label::before 
+  background: #113660 url('../img/chacked.svg') no-repeat center
+
+.order__form-policy-label
+  display: block
+  position: relative
+  font-size: 12px
+  padding-left: 28px
+  cursor: pointer
+  &::before
+    position: absolute
+    content: ''
+    top: -2px 
+    left: 0px
+    width: 16px
+    height: 16px
+    border: 1px solid rgba(86, 87, 90, 0.5)
+
+
+.order__right
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 830px
+  margin-left: 86px
+  +media-md 
+    width: 100%
+    order: -1
+    margin-bottom: 30px
+
+.order__img
+  position: relative
+  margin-right: 15px
+  img 
+    width: 100%
+  .top__price
+    left: -50px
+    bottom: 85px
+  +media-lg 
+    width: 460px
+
+.order__contacts
+  color: #113660
+
+.order__contacts-title
+  margin-bottom: 20px
+  font-size: 22px
+  font-weight: 900
+
+.order__contacts-phone
+  margin-bottom: 9px
+  b 
+    font-weight: 900
+
+
+.order__delivery
+  font-size: 12px
+  color: #000000
+  text-align: center
+  

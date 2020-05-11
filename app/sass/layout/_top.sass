@@ -1,0 +1,88 @@
+.top__item
+  height: 600px
+  +media-md 
+    height: 530px
+
+.top__item--midday
+  background-color: $color-gray
+
+.top__wrap
+  position: relative
+
+.top__title
+  padding-top: 30px
+
+.top__img
+  position: absolute
+  left: -100px
+  img 
+    width: 100%
+  +media-lg 
+    width: 500px
+    left: -20px
+  +media-md
+    width: 430px
+    left: -75px
+
+.top__price
+  position: absolute
+  left: 110px
+  bottom: 150px
+  display: flex
+  align-items: center 
+  justify-content: center
+  width: 102px
+  height: 102px
+  border-radius: 50%
+  color: $color-gray
+  background-color: $color-blue-text
+  +media-lg
+    left: 70px
+    bottom: 120px
+  +media-md
+    transform: scale(0.8)
+    left: 60px
+    bottom: 100px
+.top__price-text
+  font-weight: 700
+  font-size: 44px
+  line-height: 1
+  div 
+    text-align: center
+    font-size: 16px
+
+.top__right
+  float: right
+  margin-top: 136px
+
+.top__name
+  display: flex
+  align-items: center
+  color: $color-blue-text
+.top__name-imuno
+  font-weight: 900
+  font-size: 80px
+  line-height: 0.875
+  +media-lg
+    font-size: 50px
+  +media-md 
+    font-size: 40px
+.top__name-duo
+  font-weight: 900
+  font-size: 160px
+  line-height: 1
+  margin-left: 50px
+  +media-lg
+    font-size: 120px
+    margin-left: 30px
+  +media-md
+    font-size: 100px
+    margin-left: 20px
+
+.top__bages
+  float: right
+  margin-top: 100px
+  display: flex
+  width: 360px
+  align-items: center 
+  justify-content: space-between
