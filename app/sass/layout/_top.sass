@@ -84,6 +84,10 @@
     position: static
     width: 230px
     margin: 0 auto
+.top__item--midday
+  +media-sm 
+    .top__img
+      transform: scale(1.1)
 
 .top__price
   position: absolute
@@ -105,9 +109,9 @@
     left: 60px
     bottom: 100px
   +media-sm
-    transform: scale(0.6)
+    transform: scale(0.4)
     left: 0px
-    bottom: 120px
+    bottom: 32px
 .top__price-text
   font-weight: 700
   font-size: 44px
