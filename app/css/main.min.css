@@ -1862,8 +1862,8 @@ a {
   }
 
   .section-1 {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #113660), color-stop(40%, #ffcb08), color-stop(60%, #ffcb08));
-    background: linear-gradient(0deg, #113660 40%, #ffcb08 40%, #ffcb08 60%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, #113660), color-stop(35%, #ffcb08), color-stop(65%, #ffcb08));
+    background: linear-gradient(0deg, #113660 35%, #ffcb08 35%, #ffcb08 65%);
     border-top: 1px solid rgba(255, 255, 255, 0.8);
   }
 
