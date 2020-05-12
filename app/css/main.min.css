@@ -1803,6 +1803,7 @@ a {
   }
 
   .top__item--midday .top__img {
+    margin-left: -20px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
