@@ -6,6 +6,8 @@
   padding-left: 100px
   +media-md 
     height: 530px
+  +media-sm 
+    padding-left: 50px
   
 
 .top__item--midday
@@ -26,6 +28,12 @@
     .top__img
       img 
         width: 72%
+  +media-sm
+    .top__img
+      margin-top: 40px
+      margin-bottom: 35px
+      img 
+        width: 90%
 
 .top__item--night
   background-color: #113660
@@ -42,13 +50,24 @@
     .top__img
       img 
         width: 72%
+  +media-sm
+    .top__img
+      margin-top: 40px
+      margin-bottom: 35px
+      img 
+        width: 90%
 
 
 .top__wrap
   position: relative
+  +media-sm 
+    display: flex
+    flex-direction: column
 
 .top__title
-  padding-top: 30px
+  padding-top: 15px
+  +media-sm 
+    margin-bottom: 15px
 
 .top__img
   position: absolute
@@ -61,6 +80,10 @@
   +media-md
     width: 430px
     left: -75px
+  +media-sm 
+    position: static
+    width: 230px
+    margin: 0 auto
 
 .top__price
   position: absolute
@@ -81,6 +104,10 @@
     transform: scale(0.8)
     left: 60px
     bottom: 100px
+  +media-sm
+    transform: scale(0.6)
+    left: 0px
+    bottom: 120px
 .top__price-text
   font-weight: 700
   font-size: 44px
@@ -92,12 +119,16 @@
 .top__right
   float: right
   margin-top: 136px
+  +media-sm 
+    margin-top: 20px
 
 .top__name
   display: flex
   align-items: center
   justify-content: flex-end
   color: #113660
+  +media-sm 
+    justify-content: center
 .top__name-imuno
   font-weight: 900
   font-size: 80px
@@ -108,6 +139,8 @@
     font-size: 40px
   +media-md 
     font-size: 35px
+  +media-sm
+    font-size: 22px
 .top__name-duo
   font-weight: 900
   font-size: 160px
@@ -122,6 +155,9 @@
   +media-md
     font-size: 75px
     margin-left: 15px
+  +media-sm
+    font-size: 60px
+    margin-left: 15px
 
 .top__bages
   float: right
@@ -133,11 +169,24 @@
   +media-lg 
     margin-top: 140px
   +media-sm 
-    margin-top: 130px
+    display: none
 
 
 
 // -------------------------- top-side --------------------------
+
+.top-side.night
+  .top-side__language
+    color: #fff
+  .top-side__social-text
+    color: #fff
+    &::after 
+      background-color: #fff
+  .top-side__fb
+    background: url('../img/facebook-white.svg')
+  .top-side__ins
+    background: url('../img/instagram-white.svg')
+
 
 .top-side 
   position: absolute
@@ -145,15 +194,20 @@
   top: 60px
   left: 35px
   width: 50px
+  +media-sm 
+    top: 60px
+    left: 7px
 
 .top-side__language
-  margin-bottom: 125px
+  margin-bottom: 125px 
   font-size: 12px
   color: #56575A
   .active 
     font-weight: 900
   +media-md 
     margin-bottom: 40px
+  +media-sm 
+    margin-bottom: 30px
 
 .top-side__social
   position: relative
@@ -165,9 +219,18 @@
   .top-side__fb
     margin-bottom: 28px
     background: url('../img/facebook.svg')
+    +media-sm 
+      width: 25px
+      height: 25px
+      background-size: cover
+      margin-bottom: 15px
 
   .top-side__ins
     background: url('../img/instagram.svg')
+    +media-sm 
+      width: 25px
+      height: 25px
+      background-size: cover
 
 .top-side__social-text
   position: absolute
@@ -184,6 +247,8 @@
     width: 100px
     height: 1px
     background-color: #56575A
+  +media-sm 
+    top: 320px
 
 
 // ---------------------- top__slider-controls ------------------------
@@ -203,6 +268,10 @@
     left: 54%
   +media-md 
     top: 340px
+  +media-sm
+    left: 50%
+    top: 385px
+    transform: translate(-50%, 0px) scale(0.8)
 
 .top__slider-arrows
   position: absolute

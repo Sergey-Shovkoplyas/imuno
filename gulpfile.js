@@ -12,10 +12,12 @@ const { src, dest, series, parallel, watch } = require('gulp'),
 
 function styles () {
 	return src('app/sass/**/*.sass')
-	.pipe(sourceMaps.init())
+	// .pipe(sourceMaps.init())
 	.pipe(sass().on('error', notify.onError()))
 	.pipe(rename({ suffix: '.min'}))
-	.pipe(sourceMaps.write())
+	// .pipe(sourceMaps.write())
+	.pipe(gcmq())
+	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(dest('app/css'))
 	.pipe(browserSync.stream());
 }

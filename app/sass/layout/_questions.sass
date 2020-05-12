@@ -1,6 +1,8 @@
 .questions
   padding: 85px 0px 55px
   background-color: #fff
+  +media-sm 
+    padding: 50px 0
 
 .questions__wrap
   max-width: 1040px
@@ -10,6 +12,10 @@
   margin-bottom: 110px
   +media-md 
     margin-bottom: 60px
+  +media-sm 
+    margin-bottom: 30px
+    h2 
+      font-size: 35px
 
 .questions__list
   padding: 0
@@ -24,6 +30,8 @@
     margin-bottom: 20px
   p:last-child 
     margin-bottom: 0
+  +media-sm 
+    margin-bottom: 40px
 
 .questions__item
   position: relative
@@ -44,15 +52,24 @@
     border-top: 2px solid #113660
     border-right: 2px solid #113660
     transition: .3s
+  +media-sm 
+    padding: 15px
+    padding-right: 30px
+    font-size: 18px
+    &::after 
+      right: 15px
 .questions__item.active
   &::after 
     transform: translate(0, -50%) rotate(135deg)
+
 
 .questions__amswer
   display: none
   padding: 0px 160px 25px 40px
   +media-md 
     padding: 0px 100px 25px 40px
+  +media-sm 
+    padding: 15px
 
 .questions__form-row
   display: flex
@@ -60,6 +77,8 @@
   margin-bottom: 47px
   +media-md 
     flex-wrap: wrap
+  +media-sm 
+    margin-bottom: 30px
 
 
 .questions__inputs
@@ -79,6 +98,11 @@
     margin-bottom: 15px
     input[type='text']
       width: 100%
+  +media-sm 
+    flex-direction: column
+    input[type='text']
+      padding: 15px 25px
+      margin-bottom: 15px
 
 .questions__form-email
   width: 300px
@@ -118,3 +142,5 @@
     width: 16px
     height: 16px
     border: 1px solid #C4C4C4
+  +media-sm 
+    margin-left: 0

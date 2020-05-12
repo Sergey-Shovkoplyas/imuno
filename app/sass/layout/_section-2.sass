@@ -1,6 +1,8 @@
 .section-2 
   padding: 55px 0px 75px 
   background-color: #F1F1F1
+  +media-sm 
+    padding: 40px 0px
 
 .section-2__title 
   display: flex
@@ -10,6 +12,13 @@
     color: #113660
   +media-md
     margin-bottom: 260px
+  +media-sm 
+    flex-direction: column
+    align-items: center
+    margin-bottom: 0px
+    h2 
+      order: -1
+      font-size: 35px
 
 .section-2__subtitle
   position: relative
@@ -61,6 +70,9 @@
   position: relative
   display: flex
   justify-content: space-between
+  +media-sm 
+    flex-direction: column
+    align-items: center
 
 .section-2__middle
   position: relative
@@ -72,6 +84,13 @@
     top: -250px
     left: 50%
     transform: translate(-50%, 0)
+  +media-sm 
+    order: -1
+    position: static
+    transform: translate(0, 0)
+    width: 100%
+    flex: auto
+    margin-bottom: 30px
 
 
 .section-2__left,
@@ -81,6 +100,10 @@
     .section-2__item
       margin-bottom: 50px !important
       transform: translateX(0px) !important
+  +media-sm
+    flex: auto
+    .section-2__item
+      margin-bottom: 20px !important
 
 
 
@@ -97,6 +120,8 @@
         transform: translateX(90px)
       &:nth-child(2)
         transform: translateX(-10px)
+  +media-sm 
+    color: #F49736
   
   
 .section-2__right
@@ -112,6 +137,8 @@
         transform: translateX(-90px)
       &:nth-child(2)
         transform: translateX(10px)
+  +media-sm 
+    color: #113660
 
 .section-2__item
   &:nth-child(1)
@@ -123,6 +150,9 @@
   margin-top: 65px
   img 
     width: 100%
+  +media-sm
+    img 
+      width: 95%
 
 .section-2__decor
   width: 780px
@@ -138,6 +168,9 @@
   +media-md 
     top: 8px
     width: 500px
+  +media-sm
+    top: -13px
+    transform: translate(-50%, 0) scale(0.7)
 
 
 

@@ -13,22 +13,29 @@ $(document).ready(function () {
 	});
 
 	let $rangeContainer = $('.top__slider-range');
+	let $topSide = $('.top-side');
 
 	topSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
 		if (currentSlide==0) {
 			// console.log('day');
 			$rangeContainer.removeClass('middle night');
 			$rangeContainer.addClass('day');
+
+			$topSide.removeClass('night');
 		}
 		if (currentSlide==1) {
 			// console.log('middle');
 			$rangeContainer.removeClass('day night');
 			$rangeContainer.addClass('middle');
+
+			$topSide.removeClass('night');
 		}
 		if (currentSlide==2) {
 			// console.log('night');
 			$rangeContainer.removeClass('middle day');
 			$rangeContainer.addClass('night');
+
+			$topSide.addClass('night');
 		}
 	});
 
