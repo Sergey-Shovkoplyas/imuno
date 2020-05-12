@@ -1,0 +1,143 @@
+.section-2 
+  padding: 55px 0px 75px 
+  background-color: #F1F1F1
+
+.section-2__title 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 90px
+  h2 
+    color: #113660
+  +media-md
+    margin-bottom: 260px
+
+.section-2__subtitle
+  position: relative
+  width: 275px
+  flex-shrink: 0
+  padding-top: 15px
+  text-align: center
+  font-size: 22px
+  font-weight: 900
+  &.day 
+    color: #F49736
+    &::before
+      position: absolute
+      content: ''
+      top: 30px
+      right: -180px
+      width: 160px
+      height: 1px
+      background-color: #F49736
+  &.night
+    color: #113660
+    &::before
+      position: absolute
+      content: ''
+      top: 30px
+      left: -180px
+      width: 160px
+      height: 1px
+      background-color: #113660
+  +media-lg 
+    &.day
+      &::before
+        right: -70px
+        width: 70px
+    &.night
+      &::before
+        left: -70px
+        width: 70px
+  +media-md 
+    padding: 0 20px
+    padding-top: 15px
+    font-size: 17px
+    &.day,
+    &.night
+      &::before 
+        display: none
+
+.section-2__row 
+  position: relative
+  display: flex
+  justify-content: space-between
+
+.section-2__middle
+  position: relative
+  flex: 570px 0 0
+  +media-lg
+    flex: 440px 0 0
+  +media-md 
+    position: absolute
+    top: -250px
+    left: 50%
+    transform: translate(-50%, 0)
+
+
+.section-2__left,
+.section-2__right 
+  flex: 200px 0 0 
+  +media-md 
+    .section-2__item
+      margin-bottom: 50px !important
+      transform: translateX(0px) !important
+
+
+
+.section-2__left
+  text-align: right
+  .section-2__item
+    &:nth-child(1)
+      transform: translateX(180px)
+    &:nth-child(2)
+      transform: translateX(50px)
+  +media-lg
+    .section-2__item
+      &:nth-child(1)
+        transform: translateX(90px)
+      &:nth-child(2)
+        transform: translateX(-10px)
+  
+  
+.section-2__right
+  text-align: left
+  .section-2__item
+    &:nth-child(1)
+      transform: translateX(-180px)
+    &:nth-child(2)
+      transform: translateX(-50px)
+  +media-lg
+    .section-2__item
+      &:nth-child(1)
+        transform: translateX(-90px)
+      &:nth-child(2)
+        transform: translateX(10px)
+
+.section-2__item
+  &:nth-child(1)
+    margin-bottom: 90px
+  &:nth-child(2)
+    margin-bottom: 150px
+
+.section-2__img 
+  margin-top: 65px
+  img 
+    width: 100%
+
+.section-2__decor
+  width: 780px
+  position: absolute
+  left: 50%
+  top: -15px
+  transform: translate(-50%, 0)
+  img 
+    width: 100%
+  +media-lg 
+    top: 20px
+    width: 600px
+  +media-md 
+    top: 8px
+    width: 500px
+
+
+

@@ -21,15 +21,71 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 <body>
 
-	<div class="controls"></div>
+	<div class="controls">
+		<ul class="controls__list">
+			<li class="active"><a href="#home-top"></a></li>
+			<li><a href="#home-1"></a></li>
+			<li><a href="#home-2"></a></li>
+			<li><a href="#home-3"></a></li>
+			<li><a href="#home-4"></a></li>
+		</ul>
+	</div>
 
-	<section class="top">
+	<section class="top" id="home-top">
+
+		<div class="top-side">
+			<div class="top-side__language">
+				<a href="#">рус</a> / <a class="active">укр</a>
+			</div>
+			<div class="top-side__social">
+				<a href="#" class="top-side__fb"></a>
+				<a href="#" class="top-side__ins"></a>
+				<div class="top-side__social-text">Мы в соцсетях</div>
+			</div>
+		</div>
+
+		<div class="container top__slider-controls-wrap">
+			<div class="top__slider-controls">
+				<div class="top__slider-range middle">
+					<input type="text" class="range-slider" name="my_range" value="" />
+				</div>
+				<div class="top__slider-arrows">
+					<div class="top__slider-prev"></div>
+					<div class="top__slider-next"></div>
+				</div>
+			</div>
+		</div>
+
 		<div class="top__slider">
+
+			<div class="top__item top__item--day">
+				<div class="top__wrap container clearfix">
+					<div class="top__title">
+						<h2>Підтримує імунний захист протягом дня</h2>
+					</div>
+
+					<div class="top__img">
+						<img src="img/section-3-img.png" alt="imuno">
+					</div>
+
+					<div class="top__right">
+						<div class="top__name">
+							<div class="top__name-imuno">ІМУНО <br> БАЛАНС</div>
+							<div class="top__name-duo">ДУО</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 			<div class="top__item top__item--midday">
 				<div class="top__wrap container clearfix">
 					<div class="top__title">
@@ -37,8 +93,8 @@
 					</div>
 
 					<div class="top__img">
-						<img src="img/top-midday.png" alt="imuno">
-						<div class="top__price">
+						<img src="img/top-midday.png" alt="imuno" class="wow zoomIn">
+						<div class="top__price  wow zoomInLeft" data-wow-delay=".3s">
 							<div class="top__price-text">
 								270 <br>
 								<div>грн</div>
@@ -69,10 +125,31 @@
 
 				</div>
 			</div>
+
+			<div class="top__item top__item--night">
+				<div class="top__wrap container clearfix">
+					<div class="top__title">
+						<h2>Підтримує імунний захист протягом дня</h2>
+					</div>
+
+					<div class="top__img">
+						<img src="img/section-3-img.png" alt="imuno">
+					</div>
+
+					<div class="top__right">
+						<div class="top__name">
+							<div class="top__name-imuno">ІМУНО <br> БАЛАНС</div>
+							<div class="top__name-duo">ДУО</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 		</div>
 	</section>
 
-	<section class="section-1">
+	<section class="section-1" id="home-1">
 		<div class="container">
 			<div class="section-1__row">
 
@@ -113,7 +190,44 @@
 		</div>
 	</section>
 
-	<section class="section-3">
+	<section class="section-2" id="home-2">
+		<div class="container">
+			<div class="section-2__title">
+				<div class="section-2__subtitle day">з помаранчевого блістера
+					для прийому вранці
+					</div>
+				<h2>Капсула</h2>
+				<div class="section-2__subtitle night">з синього блістера
+					для прийому ввечері</div>
+			</div>
+			<div class="section-2__row">
+
+				<div class="section-2__left">
+					<div class="section-2__item wow zoomIn">Захищає верхні дихальн	шляхи</div>	
+					<div class="section-2__item wow zoomIn">Підтримує імунний захист	протягом дня</div>	
+					<div class="section-2__item wow zoomIn">Запобігає виснаженню	імунної  системи та	виникненню алергічних	реакцій</div>	
+				</div>
+
+				<div class="section-2__middle">
+					<div class="section-2__decor">
+						<img src="img/decor-wide.png" alt="imuno" id="decor-wide">
+					</div>
+					<div class="section-2__img">
+						<img src="img/order-img.png" alt="imuno">
+					</div>
+				</div>
+
+				<div class="section-2__right">
+					<div class="section-2__item wow zoomIn">Відновлює імунітет під час сну</div>	
+					<div class="section-2__item wow zoomIn">Покращує стан серцевої та нервової систем</div>	
+					<div class="section-2__item wow zoomIn">Допомагає організму повноцінно відпочити	та відновити сили</div>	
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section-3" id="home-3">
 		<div class="container container--1350">
 			<div class="section-3__title">
 				<h2>Підтримує імунний захист протягом дня</h2>
@@ -138,11 +252,11 @@
 				<div class="section-3__right">
 					<div class="section-3__text">
 
-						<div class="section-3__item"><b>Біфідо- та Лактобактерії, у поєднанні з Інуліном</b> –є пробіотичним комплексом, що створює первинну ланку імунітету, перешкоджає розвитку патогенної мікрофлори</div>
+						<div class="section-3__item wow fadeInRight"><b>Біфідо- та Лактобактерії, у поєднанні з Інуліном</b> –є пробіотичним комплексом, що створює первинну ланку імунітету, перешкоджає розвитку патогенної мікрофлори</div>
 
-						<div class="section-3__item"><b>Комплекс Магнію, Селену та вітамінів В6 і В12</b> – збалансовує імунну відповідь організму протягом дня, перешкоджає його надмірному виснаженню, має протизапальну дію та відновлює пошкоджені клітини</div>
+						<div class="section-3__item wow fadeInRight" data-wow-delay=".3s"><b>Комплекс Магнію, Селену та вітамінів В6 і В12</b> – збалансовує імунну відповідь організму протягом дня, перешкоджає його надмірному виснаженню, має протизапальну дію та відновлює пошкоджені клітини</div>
 
-						<div class="section-3__item"><b>Екстракти Евкаліпту та Барбадоської вишні</b>  – рослинні компоненти, що природньо посилюють імунітет, знищують віруси та бактерії, захищають верхні дихальні шляхи</div>
+						<div class="section-3__item wow fadeInRight" data-wow-delay=".6s"><b>Екстракти Евкаліпту та Барбадоської вишні</b>  – рослинні компоненти, що природньо посилюють імунітет, знищують віруси та бактерії, захищають верхні дихальні шляхи</div>
 						
 					</div>
 					<div class="section-3__text-bg">
@@ -157,7 +271,7 @@
 		</div>
 	</section>
 
-	<section class="section-4 section-3">
+	<section class="section-4 section-3"  id="home-4">
 		<div class="container container--1350">
 			<div class="section-3__title">
 				<h2>Відновлює імунітет під час сну</h2>
@@ -182,11 +296,11 @@
 				<div class="section-3__right">
 					<div class="section-3__text">
 
-						<div class="section-3__item"><b>L-триптофан та L-гліцин</b> – амінокислоти, що впливають на імунітет саме вночі, зменшують запалення та відновлюють захисні сили імунітету </div>
+						<div class="section-3__item wow fadeInLeft"><b>L-триптофан та L-гліцин</b> – амінокислоти, що впливають на імунітет саме вночі, зменшують запалення та відновлюють захисні сили імунітету </div>
 
-						<div class="section-3__item"><b>Екстракти М'яти перцевої та Бархату амурського</b> – рослинні компоненти, що зменшують подразнення та сприяють захисту верхніх дихальних шляхів від інфекцій, покращують роботу серцево-судинної та нервової системи</div>
+						<div class="section-3__item wow fadeInLeft" data-wow-delay=".3s"><b>Екстракти М'яти перцевої та Бархату амурського</b> – рослинні компоненти, що зменшують подразнення та сприяють захисту верхніх дихальних шляхів від інфекцій, покращують роботу серцево-судинної та нервової системи</div>
 
-						<div class="section-3__item"><b>Цинк та вітамін D3</b>  – у комбінації зменшують запалення, сприяють більш швидкому відновленню після ГРВІ і грипу</div>
+						<div class="section-3__item wow fadeInLeft" data-wow-delay=".6s"><b>Цинк та вітамін D3</b>  – у комбінації зменшують запалення, сприяють більш швидкому відновленню після ГРВІ і грипу</div>
 						
 					</div>
 					<div class="section-3__text-bg">
@@ -283,6 +397,11 @@
 				<h2>Бажаєте замовити?</h2>
 			</div>
 			<div class="order__row">
+				<div class="order__popup">
+					<div class="order__popup-title">Ваше замовлення прийнято!</div>
+					<div class="order__popup-text">Найближчим часом з Вами зв'яжеться оператор для уточнення та підтвердження замовлення.</div>
+					<div class="order__popup-close"></div>
+				</div>
 				<div class="order__left">
 					<form action="#" class="order__form">
 						<input type="text" class="order__name" placeholder="Ваше ім’я">
@@ -328,14 +447,11 @@
 	</section>
 
 
-
-
-
-	
-
-	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+
 	<script src="js/common.js"></script>
 
 </body>

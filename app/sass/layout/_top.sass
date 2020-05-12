@@ -1,10 +1,48 @@
+.top
+  position: relative
+  
 .top__item
   height: 600px
+  padding-left: 100px
   +media-md 
     height: 530px
+  
 
 .top__item--midday
-  background-color: $color-gray
+  background-color: #F1F1F1
+
+.top__item--day
+  background-color: #FFCB08
+  h2 
+    color: #393939
+  .top__name
+    color: rgba(255, 255, 255, .8)
+  .top__img
+    left: 0
+    top: 210px
+    img 
+      width: 81%
+  +media-md 
+    .top__img
+      img 
+        width: 72%
+
+.top__item--night
+  background-color: #113660
+  h2 
+    color: #fff
+  .top__name
+    color: rgba(255, 255, 255, .1)
+  .top__img
+    left: 0
+    top: 210px
+    img 
+      width: 81%
+  +media-md 
+    .top__img
+      img 
+        width: 72%
+
 
 .top__wrap
   position: relative
@@ -17,7 +55,7 @@
   left: -100px
   img 
     width: 100%
-  +media-lg 
+  +media-1350
     width: 500px
     left: -20px
   +media-md
@@ -35,7 +73,7 @@
   height: 102px
   border-radius: 50%
   color: $color-gray
-  background-color: $color-blue-text
+  background-color: #113660
   +media-lg
     left: 70px
     bottom: 120px
@@ -58,26 +96,32 @@
 .top__name
   display: flex
   align-items: center
-  color: $color-blue-text
+  justify-content: flex-end
+  color: #113660
 .top__name-imuno
   font-weight: 900
   font-size: 80px
   line-height: 0.875
+  +media-1350 
+    font-size: 70px
   +media-lg
-    font-size: 50px
+    font-size: 40px
   +media-md 
-    font-size: 38px
+    font-size: 35px
 .top__name-duo
   font-weight: 900
   font-size: 160px
   line-height: 1
   margin-left: 50px
+  +media-1350 
+    font-size: 140px
+    margin-left: 40px
   +media-lg
-    font-size: 120px
-    margin-left: 30px
-  +media-md
-    font-size: 90px
+    font-size: 110px
     margin-left: 20px
+  +media-md
+    font-size: 75px
+    margin-left: 15px
 
 .top__bages
   float: right
@@ -86,3 +130,141 @@
   width: 360px
   align-items: center 
   justify-content: space-between
+  +media-lg 
+    margin-top: 140px
+  +media-sm 
+    margin-top: 130px
+
+
+
+// -------------------------- top-side --------------------------
+
+.top-side 
+  position: absolute
+  z-index: 100
+  top: 60px
+  left: 35px
+  width: 50px
+
+.top-side__language
+  margin-bottom: 125px
+  font-size: 12px
+  color: #56575A
+  .active 
+    font-weight: 900
+  +media-md 
+    margin-bottom: 40px
+
+.top-side__social
+  position: relative
+  a 
+    display: block
+    margin: 0 auto
+    width: 42px
+    height: 42px
+  .top-side__fb
+    margin-bottom: 28px
+    background: url('../img/facebook.svg')
+
+  .top-side__ins
+    background: url('../img/instagram.svg')
+
+.top-side__social-text
+  position: absolute
+  top: 350px
+  left: 13px
+  transform: rotate(-90deg)
+  transform-origin: left top
+  white-space: nowrap
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    right: -115px
+    width: 100px
+    height: 1px
+    background-color: #56575A
+
+
+// ---------------------- top__slider-controls ------------------------
+
+
+.top__slider-controls-wrap
+  position: relative
+
+.top__slider-controls
+  position: absolute
+  z-index: 100
+  width: 195px
+  top: 390px
+  left: 44%
+  +media-lg 
+    top: 390px
+    left: 54%
+  +media-md 
+    top: 340px
+
+.top__slider-arrows
+  position: absolute
+  bottom: -25px
+  left: 50%
+  transform: translate(-50%, 0)
+  width: 95px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.top__slider-prev,
+.top__slider-next
+  position: relative
+  width: 40px
+  height: 20px
+  background: url('../img/arrow.png') no-repeat center
+  cursor: pointer
+
+.top__slider-prev
+  transform: rotate(180deg)
+
+
+// ---------------------- top__slider-range ------------------------
+
+
+.top__slider-range
+  width: 195px 
+  height: 80px
+  padding: 5px
+  border-radius: 40px
+  transition: .2s
+  // border: 1px solid red
+
+.top__slider-range.night
+  background: url('../img/night.png')
+
+.top__slider-range.day
+  background: url('../img/day.png')
+
+.top__slider-range.middle
+  background: url('../img/middle.png')
+
+
+
+.top__slider-range .irs--big .irs-handle
+  top: 0px
+  width: 70px
+  height: 70px
+  background: url('../img/range-mid.png') no-repeat center
+  border: none
+  outline: none
+  border-radius: 0
+  box-shadow: none
+  cursor: pointer
+  transition: .3s
+
+.top__slider-range .irs--big
+  .irs-line,
+  .irs-min,
+  .irs-max,
+  .irs-single,
+  .irs-bar
+    display: none
+

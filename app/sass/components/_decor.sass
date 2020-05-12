@@ -8,7 +8,6 @@
   border-right: none
   border-bottom: none
 
-
 .decor__item
   position: absolute
   top: 50%
@@ -45,3 +44,13 @@
   to 
     opacity: 1
 
+@keyframes scale 
+  from 
+    transform: scale(0)
+  to 
+    transform: scale(1)
+
+ 
+.decor-wide--animated
+  animation: fade 3s
+  animation: scale 3s
