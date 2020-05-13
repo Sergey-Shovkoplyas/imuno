@@ -597,6 +597,7 @@ a {
 .section-1 {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #113660), color-stop(50%, #ffcb08));
   background: linear-gradient(90deg, #113660 50%, #ffcb08 50%);
+  padding-bottom: 30px;
 }
 
 .section-1__decor {
@@ -1218,7 +1219,7 @@ a {
 .order__form-policy-label::before {
   position: absolute;
   content: '';
-  top: -2px;
+  top: 0px;
   left: 0px;
   width: 16px;
   height: 16px;
@@ -1946,6 +1947,8 @@ a {
     position: absolute;
     top: 50%;
     left: 0px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     width: 24px;
     height: 10px;
     background: url("../img/decor-item.svg");
@@ -2028,10 +2031,40 @@ a {
 
   .section-2__left {
     color: #F49736;
+    margin-bottom: 20px;
+  }
+
+  .section-2__left .section-2__item {
+    text-align: left;
+  }
+
+  .section-2__left .section-2__item::before {
+    background: url("../img/decor-item-day.svg");
   }
 
   .section-2__right {
     color: #113660;
+  }
+
+  .section-2__right .section-2__item::before {
+    background: url("../img/decor-item-night.svg");
+  }
+
+  .section-2__item {
+    padding-left: 35px;
+    position: relative;
+  }
+
+  .section-2__item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 24px;
+    height: 10px;
+    opacity: .5;
   }
 
   .section-2__img img {

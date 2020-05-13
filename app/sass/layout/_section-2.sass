@@ -122,6 +122,11 @@
         transform: translateX(-10px)
   +media-sm 
     color: #F49736
+    margin-bottom: 20px
+    .section-2__item
+      text-align: left
+      &::before
+        background: url('../img/decor-item-day.svg')
   
   
 .section-2__right
@@ -139,12 +144,27 @@
         transform: translateX(10px)
   +media-sm 
     color: #113660
+    .section-2__item
+      &::before
+        background: url('../img/decor-item-night.svg')
 
 .section-2__item
   &:nth-child(1)
     margin-bottom: 90px
   &:nth-child(2)
     margin-bottom: 150px
+  +media-sm 
+    padding-left: 35px
+    position: relative
+    &::before 
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0px
+      transform: translate(0, -50%)
+      width: 24px 
+      height: 10px
+      opacity: .5
 
 .section-2__img 
   margin-top: 65px
