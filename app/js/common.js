@@ -1,3 +1,4 @@
+$(document).ready(function () {
 
 	new WOW().init();
 	
@@ -49,7 +50,7 @@
 		skin: "big",
 		min: 0,
 		max: 2,
-		from: 1,
+		from: 0,
 		// onChange: function (data) {
 		// 	let slideIndex = data.from;
 		// 	topSlider.slick('slickGoTo', slideIndex);
@@ -79,12 +80,6 @@
 			from: currentSlide
 		});
 	});
-
-
-
-$(document).ready(function () {
-
-	
 
 
 
