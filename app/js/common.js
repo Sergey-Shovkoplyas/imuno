@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
 	new WOW().init();
+
+	setTimeout(function(){
+		$('.top').removeClass('load');
+	}, 500)
 	
 	// ---------------- initialize top__slider ------------------
 
@@ -9,7 +13,7 @@ $(document).ready(function () {
 		prevArrow: $('.top__slider-prev'),
 		nextArrow: $('.top__slider-next'),
 		infinite: false,
-		initialSlide: 0
+		initialSlide: 1
 	});
 
 	let $rangeContainer = $('.top__slider-range');
@@ -50,7 +54,7 @@ $(document).ready(function () {
 		skin: "big",
 		min: 0,
 		max: 2,
-		from: 0,
+		from: 1,
 		// onChange: function (data) {
 		// 	let slideIndex = data.from;
 		// 	topSlider.slick('slickGoTo', slideIndex);

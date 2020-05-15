@@ -269,9 +269,23 @@ a {
           transform: scale(1.8);
 }
 
+.top.load::before {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-color: #F1F1F1;
+}
+
 .top {
   position: relative;
   border-top: 1px solid transparent;
+}
+
+.top::before {
+  display: none;
 }
 
 .top__item {
