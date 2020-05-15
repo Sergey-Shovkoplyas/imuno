@@ -9,7 +9,7 @@ $(document).ready(function () {
 		prevArrow: $('.top__slider-prev'),
 		nextArrow: $('.top__slider-next'),
 		infinite: false,
-		initialSlide: 1
+		initialSlide: 0
 	});
 
 	let $rangeContainer = $('.top__slider-range');
