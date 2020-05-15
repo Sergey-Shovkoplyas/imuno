@@ -1,7 +1,6 @@
-$(document).ready(function () {
 
 	new WOW().init();
-
+	
 	// ---------------- initialize top__slider ------------------
 
 	let topSlider = $('.top__slider').slick({
@@ -80,6 +79,13 @@ $(document).ready(function () {
 			from: currentSlide
 		});
 	});
+
+
+
+$(document).ready(function () {
+
+	
+
 
 
 	// ---------------- section questions ------------------

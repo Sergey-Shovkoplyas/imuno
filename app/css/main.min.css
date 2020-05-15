@@ -2239,3 +2239,15 @@ a {
     margin-bottom: 14px !important;
   }
 }
+
+@media (min-height: 1085px) {
+  .top__item {
+    padding-top: 22vh;
+    padding-bottom: 22vh;
+  }
+
+  .top__slider-controls {
+    -webkit-transform: translateY(26vh);
+            transform: translateY(26vh);
+  }
+}
